@@ -1,0 +1,13 @@
+td{
+    border: 2px solid black;
+}
+textarea{
+    background-color: rgb(14, 14, 237);
+    color: rgb(241, 5, 5);
+    font-size: large;
+}
+h1{
+    background-color: yellowgreen;
+    color: rgb(255, 0, 93);
+    
+}

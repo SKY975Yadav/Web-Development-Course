@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+        /* .box::first-line{
+            background-color: aqua;
+        } */
+
+        /* .box::first-letter{
+            font-size: 45px;
+            color: blue;
+            background-color: yellow;
+        } */
+
+        /* .boxes * {
+            color: red;
+            padding: 15px;
+            margin: 20px 0px;
+            border: 2px solid black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+        }
+
+        p, .boxes > p ,
+        .box,
+        [data-color="primary"] {
+            padding-top: 120px;
+            padding-bottom: 120px;
+
+        } */
+
+        /* .box:nth-child(even){
+            background-color: greenyellow;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 18px;
+        } */
+
+        /* .box:nth-child(3){
+            background-color: rgb(230, 31, 64);
+        }
+
+        .box:nth-last-child(3){
+            background-color: rgb(54, 54, 236);
+        } */
+
+        .boxes::after{
+            content: "This is beautiful Website";
+        }
+        .temp::before{
+            content: "This is before 2nd box ";
+        }
+
+        ::selection{
+            background-color: rgb(0, 0, 0);
+            color: aqua;
+        }
+
+        input{
+            padding-top: 10px;
+            height: 10vh;
+            width: 35vw;
+        }
+        input::placeholder{
+            color: rgb(60, 0, 255);
+            font-size: 35px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi inventore
+            nemo animi blanditiis
+            molestiae quidem pariatur quos? Fugiat aperiam architecto perspiciatis dolores? Velit explicabo et provident
+            sequi rem ipsa dicta, cumque iusto fuga? Aliquam est inventore sunt quos adipisci eveniet nobis repudiandae
+            vero dolore magni.</div>
+        <div class="box temp"><br>Box 2</div>
+        <div class="box">Box 3</div>
+        <p class = "box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui sequi, laborum ea voluptatem eos magnam
+            assumenda
+            nesciunt at minima quo aliquam odit  provident rerum? Architecto eum quos, praesentium rem repellendus
+            dolorem,
+            in fuga explicabo ea mollitia blanditiis delectus voluptatibus quisquam saepe odit cumque. Molestiae, dolor.
+        </p>
+
+        <input type="text" placeholder="enter your name here">
+    </div>
+</body>
+
+</html>

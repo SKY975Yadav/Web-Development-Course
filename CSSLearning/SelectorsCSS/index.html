@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Select</title>
+    <style>
+        /* Elementary selector */
+        div{
+            color: blue;
+            background-color: red;
+        }
+        /* class selector */
+        .first{
+            color: brown;
+            background-color: green;
+        }
+        /* id selector */
+        #second{
+            color: yellow;
+            background-color: rgb(68, 5, 243);
+        }
+        /* Descendant selector also for child of child */
+        span p {
+            color: rgb(25, 10, 230);
+            background-color: rgb(157, 224, 13);
+        }
+        /* child selector  only for child */
+         span > p{
+            color: aqua;
+            background-color: red;
+        }
+        /* Universal Selector */
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: red;
+            /* background-color: rgb(6, 156, 249); */
+        }
+        a:link{
+            color: green;
+            /* background-color: rgb(6, 156, 249); */
+        }
+        a:active{
+            color: rgb(116, 10, 245);
+            background-color: rgb(255, 7, 7);
+        }
+        
+        a:hover{
+            background-color: yellow;
+            color: blue;
+        }
+         /*p:first-child{
+            color: aqua;
+            background-color: yellowgreen;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        Hi This is Elementary selector
+    </div>
+    <div class="first">
+        Hi This is class selector
+    </div>
+    <div id = "second">
+        Hi this is id selector 
+    </div>
+    <br><br>
+    <span>
+        <!-- <article> -->
+            <p>Hi this paragraph withinin span</p>
+        <!-- </article> -->
+    </span>
+    <br><br>
+    <span>
+        <article>
+            <p>This is paragraph within article within span</p>
+        </article>
+    </span>
+    <br><br>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.hfxs.com">Go to HFXS</a>
+    <br><br>
+    <main>
+        <p>This is First</p>
+        <p>This is second</p>
+    </main>
+</body>
+</html>

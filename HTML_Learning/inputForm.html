@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input in Html using Form</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h1>Form to apply </h1>
+    <form action="post">
+        <div>
+        <label for="userName">Enter your userName : </label>
+        <input type="text" id="userName" name="userName" placeholder="Enter Your userName" autofocus>
+    </div>
+    <div>
+        <label for="male"> Male </label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female </label>
+        <input type="radio" name="gender" id="female"> 
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other">
+    </div>
+    <div>
+        <h2>Skills : </h2>
+        <input type="checkbox" name="skills" id="java" value="yes">
+        <label for="java">Java</label>
+        <br>
+        <input type="checkbox" name="skills" id="c++" value="yes">
+        <label for="c++">C++</label>
+    </div>
+    <div>
+        <label for="disc">Describe about yourself </label>
+        <br>
+        <textarea name="Description" id="disc" cols="30" rows="10" placeholder="Start from here"></textarea>
+    </div>
+    <div>
+        <label for="grade">What is your grade : </label>
+        <select name="grade">
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+    </div>
+    </form>
+</body>
+</html>

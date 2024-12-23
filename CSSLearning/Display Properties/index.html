@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color:antiquewhite;
+            color:red;
+            border: 2px solid blue;
+            padding: 25px;
+            margin: 20px;;
+            width: 300px;
+            display:inline-block;
+            
+            /* display: none; */
+            /* visibility: hidden; */
+
+            /* Not from this topic : */
+            display: inline-flex;
+            justify-content: center;
+        }
+        .box1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">This is box</div>
+    <div class="box">This is box 1</div>
+    <span>This is span</span>
+    <span>This is second span</span>
+</body>
+</html>

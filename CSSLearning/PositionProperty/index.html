@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 500px;
+            width: 80vw;
+            padding: 5px;
+            margin: 10px;
+            border: 2px solid black;
+            position: relative;
+            left: 7vw;
+        }
+
+        .box1 {
+            border: 3px solid black;
+            /* border-right-color:rgb(255, 4, 46);
+            border-bottom-color: blue; */
+            /* border-style: double; */
+            /* margin: 34px;
+            width: 50vw;
+            color: red;
+            background-color: aqua;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            top: 3px;
+            left: 17.3vw;
+            font-family: 'Gill Sa  ns', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 32px; */
+
+            margin: 20px;
+            padding: 10px;
+            color: red;
+            background-color: aqua;
+            position: sticky;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+            height: 50px;
+            width: 98vw;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .box2 {
+            color: brown;
+            background-color: bisque;
+            /* position: absolute; */
+            /* left: 8.4vw;
+            top: 1px; */
+        }
+
+        .box3 {
+            color: yellow;
+            background-color: blue;
+            position: fixed;
+            height: 30vh;
+            z-index: 1;
+            bottom: 1px;
+            left: 15vw;
+        }
+
+        .box4 {
+            color: rgb(255, 5, 117);
+            background-color: lawngreen;
+        }
+        .parent{
+            padding: 5px;
+            margin: 40px;
+            border: 3px solid blue;
+            background-color:beige;
+
+            /* 
+                transform filter perspective also treated as position true
+             */
+            /* position: absolute; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">
+            This is about position in CSS it will help full for placing content in web page
+        </div>
+        <div class="box box2 ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat modi similique eligendi asperiores fugit,
+            repellendus enim nesciunt perspiciatis, ut omnis porro consectetur dolores, laboriosam officia obcaecati
+            mollitia debitis iusto itaque quae tempora. Totam deserunt fugiat, nesciunt quisquam ducimus recusandae
+            voluptas, dolore iusto odit, voluptatum neque?
+        </div>
+        <div class="box box3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat modi similique eligendi asperiores fugit,
+            repellendus enim nesciunt perspiciatis, ut omnis porro consectetur dolores, laboriosam officia obcaecati
+            mollitia debitis iusto itaque quae tempora. Totam deserunt fugiat, nesciunt quisquam ducimus recusandae
+            voluptas, dolore iusto odit, voluptatum neque?
+        </div>
+        <div class="box box4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat modi similique eligendi asperiores fugit,
+            repellendus enim nesciunt perspiciatis, ut omnis porro consectetur dolores, laboriosam officia obcaecati
+            mollitia debitis iusto itaque quae tempora. Totam deserunt fugiat, nesciunt quisquam ducimus recusandae
+            voluptas, dolore iusto odit, voluptatum neque?
+        </div>
+    </div>
+</body>
+
+</html>
